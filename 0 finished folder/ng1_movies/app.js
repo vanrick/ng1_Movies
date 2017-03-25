@@ -10,6 +10,6 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: 'views/search.html',
         controller: 'SearchController'
       })
-      .otherwise({     redirectTo: '/login'});
+      .otherwise({     redirectTo: '/home'});
       $locationProvider.html5Mode(true)
 });

@@ -1,0 +1,103 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
+#body2{
+
+  background-color: #0A0A0A;
+}
+.home_body {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(http://wallpapercave.com/wp/q9GyYPK.jpg);
+  background-size: cover;
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+.search_body {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(http://wallpaper-gallery.net/images/best-dark-wallpaper/best-dark-wallpaper-7.jpg);
+  background-size: cover;
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+
+
+/*http://wallpaper-gallery.net/images/best-dark-wallpaper/best-dark-wallpaper-7.jpg*/
+
+.center_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.largez {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 4rem;
+  white-space: nowrap;
+}
+.smallz {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/*Search html*/
+.search-form .form-group {
+  float: right !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+  width: 100%;
+  border-radius: 4px 25px 25px 4px;
+}
+.search-form .form-group span.form-control-feedback {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #3596e0;
+  left: initial;
+  font-size: 14px;
+}
