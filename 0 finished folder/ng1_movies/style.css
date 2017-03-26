@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
 #body2{
-
+  width: 100%;
+  height: 100%;
   background-color: #0A0A0A;
 }
 .home_body {
@@ -12,7 +13,7 @@
     url(http://wallpapercave.com/wp/q9GyYPK.jpg);
   background-size: cover;
   font-family: 'Source Sans Pro', sans-serif;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 .search_body {
@@ -24,7 +25,7 @@
     url(http://wallpaper-gallery.net/images/best-dark-wallpaper/best-dark-wallpaper-7.jpg);
   background-size: cover;
   font-family: 'Source Sans Pro', sans-serif;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -32,6 +33,16 @@
 /*http://wallpaper-gallery.net/images/best-dark-wallpaper/best-dark-wallpaper-7.jpg*/
 
 .center_img {
+  position: absolute;
+  padding: 15% 0 0 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  height: 100vh;
+}
+.center_img2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -100,4 +111,8 @@
   color: #3596e0;
   left: initial;
   font-size: 14px;
+}
+#img{
+  height: 20vh;
+  width: auto;
 }

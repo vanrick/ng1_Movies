@@ -2,17 +2,26 @@
   <div class="item center_img">
   <h1 class="largez">Angular OMDb API Search</h1>
   <h2 class="smallz">Enter a movie by title</h2>
-  <div class="col-md-4 col-md-offset-3">
-       <form action="" class="search-form">
-           <div class="form-group has-feedback">
-           <label for="search" class="sr-only">ie The Matrix</label>
-           <input type="text" class="form-control" name="search" id="search" placeholder="ie The Matrix">
-             <span class="glyphicon glyphicon-search form-control-feedback"></span>
-           </div>
-       </form>
-   </div>
+  <div class="col-md-4 col-md-offset-4">
+         <input ng-model='searchInput' type="text" class="form-control" name="search" id="search" placeholder="ie The Matrix">
+         <button class="btn btn-primary" ng-click="view.searchy(searchInput)" type="button" name="button">Search</button>
   </div>
-  <!-- <div class="center_img">
-    <button class="largez btn btn-primary">Find</button>
-  </div> -->
+  <table ng-repeat='movie in view.data1' class="table table-inverse">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Poster</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="http://www.imdb.com/title/{{movie.imdbID}}" target="_blank" >{{movie.Title}}</a></td>
+        <td>{{movie.Year}}</td>
+        <td><img id='img' src="{{movie.Poster}}" alt=""></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
 </div>
