@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Monkeys Database</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div>
+      <h1>Showing All Monkeys</h1>
+      <a href="/monkeys/new">Add a Monkey</a>
+        <table class='table table-striped'>
+          <thead>
+            <th>
+              Name
+            </th>
+            <th>
+              Age
+            </th>
+            <th>
+              Clothes
+            </th>
+          </thead>
+          <tbody>
+            <% for(var i=0; i<data.length; i++) { %>
+              <tr>
+                <td>
+                  <a href="/monkeys/<%= data[i].id %>"><%= data[i].name %></a>
+                </td>
+                <td>
+                  <%= data[i].age %>
+                </td>
+                <td>
+                  <%= data[i].clothing_item %>
+                </td>
+                <% } %>
+              </tr>
+          </tbody>
+        </table>
+  </body>
+</html>

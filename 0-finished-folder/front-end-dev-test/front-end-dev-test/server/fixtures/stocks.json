@@ -1,0 +1,19 @@
+{
+  "stocks": [
+    {
+      "symbol": "NTAP",
+      "company": "NetApp Inc",
+      "price": 42.80
+    },
+    {
+      "symbol": "GOOG",
+      "company": "Alphabet Inc",
+      "price": 829.08
+    },
+    {
+      "symbol": "AAPL",
+      "company": "Apple Inc",
+      "price": 139.78
+    }
+  ]
+}

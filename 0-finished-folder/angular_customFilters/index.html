@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="filters">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </head>
+  <body ng-cloak ng-controller='filtering'>
+  <div class="">
+    <input ng-model="things"type="text" name="name" value=""><br>
+    <p>{{things}}</p>
+    <p>{{things|kebab}}</p>
+  </div>
+  </body>
+</html>
